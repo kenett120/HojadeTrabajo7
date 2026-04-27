@@ -26,4 +26,18 @@ public class Association<K extends Comparable<K>, V> implements Comparable<Assoc
     public String toString() {
         return "(" + key + ", " + value + ")";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Association<?, ?> other = (Association<?, ?>) obj;
+        return key.equals(other.key);
+    }
+
+    @Override
+    public int hashCode() {
+        return key.hashCode();
+}
 }
