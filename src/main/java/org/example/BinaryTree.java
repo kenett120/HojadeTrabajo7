@@ -1,7 +1,17 @@
 package org.example;
 
+/**
+ * Nombre: Kenett Ortega
+ * Carnet: 25777
+ * Hoja de Trabajo #7
+ *
+ * Implementación de un Árbol Binario de Búsqueda (BST).
+ */
 public class BinaryTree<E extends Comparable<E>> {
 
+    /**
+     * Nodo interno del árbol
+     */
     private class Node {
         E data;
         Node left, right;
@@ -13,7 +23,9 @@ public class BinaryTree<E extends Comparable<E>> {
 
     private Node root;
 
-    // INSERT
+    /**
+     * Inserta un elemento en el árbol
+     */
     public void insert(E value) {
         root = insertRec(root, value);
     }
@@ -29,7 +41,9 @@ public class BinaryTree<E extends Comparable<E>> {
         return current;
     }
 
-    // SEARCH
+    /**
+     * Busca un elemento en el árbol
+     */
     public E search(E value) {
         return searchRec(root, value);
     }
@@ -45,7 +59,9 @@ public class BinaryTree<E extends Comparable<E>> {
         else return searchRec(current.right, value);
     }
 
-    // IN-ORDER
+    /**
+     * Recorrido in-order (imprime ordenado)
+     */
     public void inOrder() {
         inOrderRec(root);
     }

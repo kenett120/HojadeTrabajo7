@@ -3,6 +3,13 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Nombre: Kenett Ortega
+ * Carnet: 25777
+ * Hoja de Trabajo #7
+ *
+ * Pruebas unitarias para el árbol binario.
+ */
 public class BinaryTreeTest {
 
     @Test
