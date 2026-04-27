@@ -1,8 +1,8 @@
 package org.example;
 
 public class Association<K extends Comparable<K>, V> implements Comparable<Association<K, V>> {
-    private K key;
-    private V value;
+    private final K key;
+    private final V value;
 
     public Association(K key, V value) {
         this.key = key;
@@ -39,5 +39,5 @@ public class Association<K extends Comparable<K>, V> implements Comparable<Assoc
     @Override
     public int hashCode() {
         return key.hashCode();
-}
+    }
 }

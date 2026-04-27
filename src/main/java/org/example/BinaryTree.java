@@ -6,7 +6,7 @@ public class BinaryTree<E extends Comparable<E>> {
         E data;
         Node left, right;
 
-        public Node(E data) {
+        Node(E data) {
             this.data = data;
         }
     }
@@ -37,12 +37,12 @@ public class BinaryTree<E extends Comparable<E>> {
     private E searchRec(Node current, E value) {
         if (current == null) return null;
 
-        if (value.compareTo(current.data) == 0) return current.data;
+        int cmp = value.compareTo(current.data);
 
-        if (value.compareTo(current.data) < 0)
-            return searchRec(current.left, value);
-        else
-            return searchRec(current.right, value);
+        if (cmp == 0) return current.data;
+
+        if (cmp < 0) return searchRec(current.left, value);
+        else return searchRec(current.right, value);
     }
 
     // IN-ORDER
