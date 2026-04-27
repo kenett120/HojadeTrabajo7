@@ -3,7 +3,6 @@
 **Nombre:** Kenett Ortega  
 **Carnet:** 25777  
 
----
 
 ## Descripción
 
@@ -15,7 +14,6 @@ El programa:
 - Recorre el árbol en **in-order** para mostrar las palabras ordenadas
 - Traduce un archivo `texto.txt` palabra por palabra
 
----
 
 ## Funcionalidades
 
@@ -28,7 +26,6 @@ El programa:
 - Manejo de mayúsculas y minúsculas (case-insensitive)
 - Pruebas unitarias con JUnit
 
----
 
 ## Ejemplo de uso
 
@@ -36,7 +33,6 @@ El programa:
 The woman asked me to do my homework about my town.
 ### Salida
 The mujer asked me to do my tarea about my pueblo.
----
 
 ## Cómo ejecutar
 
@@ -44,7 +40,6 @@ The mujer asked me to do my tarea about my pueblo.
 2. Ejecutar la clase `Main`
 3. Ver resultados en consola
 
----
 
 ## Pruebas unitarias
 
@@ -52,8 +47,7 @@ Se incluyen pruebas para:
 - Inserción en el árbol
 - Búsqueda de elementos existentes
 - Búsqueda de elementos no existentes
-
----
+  
 
 ## Referencias
 
@@ -61,10 +55,3 @@ La implementación del Árbol Binario de Búsqueda se basó en:
 
 - Goodrich, Tamassia, Goldwasser. *Data Structures and Algorithms in Java*
 - https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
-
----
-
-## Notas
-
-- El programa no distingue entre mayúsculas y minúsculas al buscar palabras
-- Se preserva la puntuación en la salida
