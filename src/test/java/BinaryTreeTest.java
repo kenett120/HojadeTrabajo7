@@ -36,5 +36,20 @@ public class BinaryTreeTest {
                 tree.search(new Association<>("bird", ""));
 
         assertNull(result);
+
+
+    }
+
+    @Test
+    public void testMultipleInsertions() {
+        BinaryTree<Association<String, String>> tree = new BinaryTree<>();
+
+        tree.insert(new Association<>("dog", "perro"));
+        tree.insert(new Association<>("cat", "gato"));
+        tree.insert(new Association<>("elephant", "elefante"));
+
+        assertNotNull(tree.search(new Association<>("dog", "")));
+        assertNotNull(tree.search(new Association<>("cat", "")));
+        assertNotNull(tree.search(new Association<>("elephant", "")));
     }
 }
